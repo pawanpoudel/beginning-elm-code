@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "http-server",
+      "authorName": "indexzero",
+      "authorUrl": "https://github.com/indexzero"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
