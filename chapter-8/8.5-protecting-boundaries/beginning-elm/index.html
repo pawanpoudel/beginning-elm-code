@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="elm-code-is-loaded-here"></div>
+		
+    <script src="elm.js"></script>
+    <script>
+      var app = Elm.PortExamples.init({
+        node: document.getElementById("elm-code-is-loaded-here")
+      });
+
+      app.ports.sendData.subscribe(function(data) {
+        console.log("Data from Elm: ", JSON.stringify(data));
+        app.ports.receiveData.send("Hey Elm!");
+      });
+    </script>
+</body>
+</html>
