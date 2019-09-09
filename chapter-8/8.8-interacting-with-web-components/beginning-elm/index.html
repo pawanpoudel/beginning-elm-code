@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="module" 
+      src="node_modules/@github/image-crop-element/dist/index.esm.js">
+    </script>
+
+    <link
+      href="node_modules/@github/image-crop-element/index.css" 
+      rel="stylesheet">
+
+    <style>
+      .wrapper {
+        width: 500px;
+        margin: 30px auto;
+      }
+
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="elm-app-is-loaded-here"></div>
+    <script src="elm.js"></script>
+
+    <script>
+      var app = Elm.CustomElements.init({
+        node: document.getElementById("elm-app-is-loaded-here")
+      });
+    </script>
+  </body>
+</html>
