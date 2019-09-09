@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "http-server",
+      "authorName": "indexzero",
+      "authorUrl": "https://github.com/indexzero"
+    },
+    {
+      "title": "elm-live",
+      "authorName": "wking-io",
+      "authorUrl": "https://github.com/wking-io",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
