@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>		
+    <script src="elm.js"></script>
+    <script>
+	  var storedState = localStorage.getItem('post-app-save');
+	  console.log("Retrieved state: ", storedState);
+	  var startingState = storedState ? JSON.parse(storedState) : null;
+
+	  var app = Elm.Main.init({flags: 10});
+	  
+	  app.ports.storePosts.subscribe(function(posts) {
+			if (posts.length > 0) {
+				var postsJson = JSON.stringify(posts);
+				localStorage.setItem('post-app-save', postsJson);
+				console.log("Saved state: ", postsJson);
+			}
+		});
+	</script>
+</body>
+</html>
